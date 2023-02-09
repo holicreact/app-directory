@@ -10,7 +10,7 @@ async function fetchData(params: { id: string }) {
     { next: { revalidate: 60 } },
   );
   const data = await res.json();
-  console.log('dataISR', data);
+  console.log('dataISR 1분간격:', data);
 
   return data;
 }
