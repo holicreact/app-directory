@@ -7,7 +7,7 @@ export async function generateStaticParams() {
 async function fetchData(params: { id: string }) {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.id}`,
-    { next: { revalidate: 1 } },
+    { next: { revalidate: 60 } },
   );
   const data = await res.json();
   console.log('dataISR', data);
