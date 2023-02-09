@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import React from 'react';
+import clsx from 'clsx';
 
 const Label = ({
   children,
@@ -28,7 +28,7 @@ const Label = ({
 };
 export const Boundary = ({
   children,
-  labels = ['children'],
+  labels = ['children', '라벨'],
   size = 'default',
   color = 'default',
   animateRerendering = true,

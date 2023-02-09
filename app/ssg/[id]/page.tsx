@@ -17,9 +17,12 @@ export default async function Page({
   children?: React.ReactNode;
 }) {
   const data = await fetchData(params);
-
+  console.log('SSG:data', data);
   return (
     <div className="space-y-4">
+      <div className="self-start whitespace-nowrap rounded-lg bg-gray-700 px-3 py-1 text-sm font-medium tabular-nums text-gray-100">
+        Last Rendered: {new Date().toLocaleTimeString()}
+      </div>
       <h1 className="text-2xl font-medium text-gray-200">{data.title}</h1>
       <p className="font-medium text-gray-500">{data.body}</p>
     </div>
