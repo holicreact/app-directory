@@ -1,23 +1,43 @@
-# Next.js App Directory Playground
+# 플리니스트 가이드
 
-Next.js introduced the `app/` directory (beta). This is the result of the [Layouts RFC](https://nextjs.org/blog/layouts-rfc) previously published for community feedback. This includes support for:
+![플리니스트.png](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%25E1%2584%2591%25E1%2585%25B3%25E1%2586%25AF%25E1%2584%2585%25E1%2585%25B5%25E1%2584%2582%25E1%2585%25B5%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25B3.png)
 
-- **Layouts:** Easily share UI while preserving state and avoiding re-renders.
-- **Server Components:** Making server-first the default for the most dynamic applications.
-- **Streaming:** Display instant loading states and stream in updates.
-- **Suspense for Data Fetching:** `async`/`await` support and the `use` hook for component-level fetching.
+## 💡처음 시작하기
 
-The `app/` directory can coexist with the existing `pages` directory for incremental adoption. While you **don't need to use the `app/` directory** when upgrading to Next.js 13, we're laying the foundations to build complex interfaces while shipping less JavaScript.
+---
 
-## Running Locally
+[플리니스트 등급 안내](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%83%E1%85%B3%E1%86%BC%E1%84%80%E1%85%B3%E1%86%B8%20%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%20c93e1e7e3e7f48ada5b30ef97c88a0a3.md)
 
-1. Install dependencies: `yarn`
-1. Start the dev server: `yarn dev`
+[앨범형태가 무엇인가요?](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%8B%E1%85%A2%E1%86%AF%E1%84%87%E1%85%A5%E1%86%B7%E1%84%92%E1%85%A7%E1%86%BC%E1%84%90%E1%85%A2%E1%84%80%E1%85%A1%20%E1%84%86%E1%85%AE%E1%84%8B%E1%85%A5%E1%86%BA%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%80%E1%85%A1%E1%84%8B%E1%85%AD%2070a12e344c5343bbaae9a3143559d9d7.md)
 
-## Documentation
+[플리니스트 등급 안내 (1)](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%83%E1%85%B3%E1%86%BC%E1%84%80%E1%85%B3%E1%86%B8%20%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%20(1)%204ca45a6fd7da4a4096802c48b604534c.md)
 
-https://beta.nextjs.org/docs
+[플리니스트 등급 안내 (1)](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%83%E1%85%B3%E1%86%BC%E1%84%80%E1%85%B3%E1%86%B8%20%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%20(1)%20a9d709a17eea432d9d75633502ca72d6.md)
 
-## Leave Feedback
+[플리니스트 등급 안내 (2)](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%83%E1%85%B3%E1%86%BC%E1%84%80%E1%85%B3%E1%86%B8%20%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%20(2)%20309fd3ef2fb34b3b912e88f48986a18d.md)
 
-https://github.com/vercel/next.js/discussions/41745
+## 🎙콘텐츠 만들기
+
+---
+
+[업로드 방법](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%8B%E1%85%A5%E1%86%B8%E1%84%85%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8%20132310822e9e4c86adb2315b1cb37f37.md)
+
+[대본 지원 받기](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%83%E1%85%A2%E1%84%87%E1%85%A9%E1%86%AB%20%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AF%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%AE%E1%84%80%E1%85%B5%2083745dfbc5954be6b7c0325866a11cdb.md)
+
+## 💵 정산하기
+
+---
+
+[정산은 언제 되나요?](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%8B%E1%85%A5%E1%86%AB%E1%84%8C%E1%85%A6%20%E1%84%83%E1%85%AC%E1%84%82%E1%85%A1%E1%84%8B%E1%85%AD%20ece453e21aa34dbd8495c7021a69dd05.md)
+
+[수수료 안내](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%89%E1%85%AE%E1%84%89%E1%85%AE%E1%84%85%E1%85%AD%20%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%2025961010f02f40a382626481f0340462.md)
+
+[수수료 안내 (1)](%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%82%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%20%E1%84%80%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%200073a3dd7b794742a40c1b9dbf079a62/%E1%84%89%E1%85%AE%E1%84%89%E1%85%AE%E1%84%85%E1%85%AD%20%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%20(1)%20bb71a45c3059423ab1143339469d0f31.md)
+
+---
+
+## ✨등업하기
+
+---
+
+plingcast.com  |  © 2023 SENSUAL MOMENT CO, LTD
